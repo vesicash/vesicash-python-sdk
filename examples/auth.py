@@ -1,4 +1,5 @@
 from vesicashapi.auth import Auth
+
 """
 Login example
 """
@@ -20,3 +21,4 @@ signup = Auth.signup(
 )
 
 print(signup)
+ 
