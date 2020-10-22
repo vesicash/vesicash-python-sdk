@@ -1,6 +1,6 @@
 """ Script used to define the auth service"""
 
-from vesicashapi.base import VesicashBase
+from base import VesicashBase
 
 class Auth(VesicashBase):
     """ docstring for Auth"""

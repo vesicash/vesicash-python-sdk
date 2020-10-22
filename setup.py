@@ -18,8 +18,8 @@ with open(path.join(here, 'README.md'), encoding='utf-8') as f:
     long_description = f.read()
 
 setup(
-    name='vesicashapi',
-    version='1.0.0',
+    name='vesicash-python',
+    version='0.1.1-rc1',
     description='A python library to consume Vesicash API',
     long_description=long_description,
     long_description_content_type='text/markdown',

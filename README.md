@@ -8,10 +8,56 @@
 5. Bug Reporting
 
 ### 1.Installation
-`pip3 install vesicashapi`
+```pip install vesicashapi```
 
 ### 2. Usage
-See <a href="examples">Examples</a>
+# Create Transaction
+```from vesicashapi.transactions import Transactions
+
+transaction = Transactions.create(
+    title="Purchase Of An Iphone",
+    type="oneoff",
+    quantity=1,
+    amount=20000,
+    description="Iphone Purchase",
+    parties={
+        'sender': 5841206525,
+        'recipient': 9432695230,
+        'buyer': 5841206525,
+        'seller': 9432695230,
+        'charge_bearer': 5841206525
+    },
+    inspection_period=1,
+    due_date="2/12/2020",
+    currency="NGN"
+)
+
+print(transaction)`
+
+# Login / Sign Up
+`from vesicashapi.auth import Auth
+
+"""
+Login example
+"""
+
+login = Auth.login(
+    username="precious@vesicash.com",
+    password="test"
+)
+
+print(login)
+
+"""
+Sign up example
+"""
+
+signup = Auth.signup(
+    email_address="precious@vesicash.com",
+    password="test"
+)
+
+print(signup)```
 
 ### 3. Available Services
 1. Authentication
